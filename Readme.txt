@@ -1,0 +1,1 @@
+- The project needs to be open with a local server to work properly.
