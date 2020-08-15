@@ -5,7 +5,7 @@ Final Project: Cell Model -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Final Project </title>
+  <title> 3D Cell Model </title>
   <meta charset="utf-8"/>
   <script src="https://threejs.org/build/three.min.js"></script>
   <script src="https://threejs.org/examples/js/loaders/OBJLoader.js"></script>
@@ -13,6 +13,8 @@ Final Project: Cell Model -->
   <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
+
+  <!-- Script to create shaders for neightbor cells. -->
   <script type="x-shader/x-vertex" id="vertexShader">
   precision highp float;
 
@@ -44,6 +46,8 @@ Final Project: Cell Model -->
         gl_FragColor = texture2D(cover, vUV);
       }
   </script>
+
+  <!-- CSS styling for small features around the website -->
   <style>
     body{
       margin: 0;
