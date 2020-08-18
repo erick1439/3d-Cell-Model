@@ -13,11 +13,10 @@
 -	Vectary (Used for the creation of custom shapes)
 
 # Obstacles: 
--	Some of the obstacles where the creation of custom shapes. Even with the software Vectary some shapes took a while to create.
+-	Some of the obstacles were the creation of custom shapes for the main cell. Even with the software Vectary some shapes took a while to create.
 
 # Data Structures and algorithms: 
--	The only data structure used were arrays.
--	The use of the built-in ray-caster algorithm from three.js to selected specific objects on the cell.
+-	The use of the ray-caster algorithm from three.js to selected specific objects on the cell.
 
 # How to run:
 -	The program just needs be open with a local server.
