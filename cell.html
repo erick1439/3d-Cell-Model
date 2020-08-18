@@ -6,6 +6,7 @@ Final Project: Cell Model -->
 <html>
 <head>
   <title> 3D Cell Model </title>
+  <link rel="icon" href="../images/bacteria.svg" type="image/x-icon">
   <meta charset="utf-8"/>
   <script src="https://threejs.org/build/three.min.js"></script>
   <script src="https://threejs.org/examples/js/loaders/OBJLoader.js"></script>
@@ -54,12 +55,18 @@ Final Project: Cell Model -->
       overflow: hidden;
     }
 
+    a{
+      color: black;
+      text-decoration: none;
+    }
+
     p{
       margin: 1em;
       text-align: center;
     }
 
     img{
+      cursor: pointer;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -87,6 +94,7 @@ Final Project: Cell Model -->
 
     #goBack{
       color: black;
+      cursor: pointer;
       display: block;
       font-weight: 900;
       font-size: 2em;
@@ -379,51 +387,51 @@ Final Project: Cell Model -->
 
       switch (name) {
         case "nucleolus":
-          $(".popup").append("<p><strong>Nucleolus</strong>:</br>The nucleolus is a round body located inside the nucleus of a eukaryotic cell. It is not surrounded by a membrane but sits in the nucleus. The nucleolus makes ribosomal subunits from proteins and ribosomal RNA, also known as rRNA </p><img class='image' src='images/cellParts/nucleolus.jpeg' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Nucleolus'>Nucleolus</a></strong>:</br>The nucleolus is a round body located inside the nucleus of a eukaryotic cell. It is not surrounded by a membrane but sits in the nucleus. The nucleolus makes ribosomal subunits from proteins and ribosomal RNA, also known as rRNA </p><img class='image' src='images/cellParts/nucleolus.jpeg' alt='cell part' height='70' width='70'/>");
           break;
 
         case "nucleus":
-          $(".popup").append("<p><strong>Nucleus</strong>:</br>The nucleus is a highly specialized organelle that serves as the information and administrative center of the cell. This organelle has two major functions. It stores the cell's hereditary material, or DNA, and it coordinates the cell's activities, which include intermediary metabolism, growth, protein synthesis, and reproduction (cell division).</p><img class='image' src='images/cellParts/Nucleus.jpg' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Cell_nucleus'>Nucleus</a></strong>:</br>The nucleus is a highly specialized organelle that serves as the information and administrative center of the cell. This organelle has two major functions. It stores the cell's hereditary material, or DNA, and it coordinates the cell's activities, which include intermediary metabolism, growth, protein synthesis, and reproduction (cell division).</p><img class='image' src='images/cellParts/Nucleus.jpg' alt='cell part' height='70' width='70'/>");
           break;
 
         case "cover":
-          $(".popup").append("<p><strong>Cell Membrane</strong>:</br>The cell membrane, therefore, has two functions: first, to be a barrier keeping the constituents of the cell in and unwanted substances out and, second, to be a gate allowing transport into the cell of essential nutrients and movement from the cell of waste products.</p><img class='image' src='images/cellParts/cellMembrane.PNG' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Cell_membrane'>Cell Membrane</a></strong>:</br>The cell membrane, therefore, has two functions: first, to be a barrier keeping the constituents of the cell in and unwanted substances out and, second, to be a gate allowing transport into the cell of essential nutrients and movement from the cell of waste products.</p><img class='image' src='images/cellParts/cellMembrane.PNG' alt='cell part' height='70' width='70'/>");
           break;
 
         case "lysosome":
-          $(".popup").append("<p><strong>Lysosome</strong>:</br>Lysosomes are organelles that contain digestive enzymes. They digest excess or worn out organelles, food particles, and engulfed viruses or bacteria. Lysosomes are like the stomach of the cell.</p><img class='image' src='images/cellParts/lysosome.PNG' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Lysosome'>Lysosome</a></strong>:</br>Lysosomes are organelles that contain digestive enzymes. They digest excess or worn out organelles, food particles, and engulfed viruses or bacteria. Lysosomes are like the stomach of the cell.</p><img class='image' src='images/cellParts/lysosome.PNG' alt='cell part' height='70' width='70'/>");
           break;
 
         case "mitochondria":
-          $(".popup").append("<p><strong>Mitochondria</strong>:</br>Mitochondria are known as the powerhouses of the cell. They are organelles that act like a digestive system which takes in nutrients, breaks them down, and creates energy rich molecules for the cell.</p><img class='image' src='images/cellParts/mitochondrion.jpg' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Mitochondrion'>Mitochondria</a></strong>:</br>Mitochondria are known as the powerhouses of the cell. They are organelles that act like a digestive system which takes in nutrients, breaks them down, and creates energy rich molecules for the cell.</p><img class='image' src='images/cellParts/mitochondrion.jpg' alt='cell part' height='70' width='70'/>");
           break;
 
         case "endoplasmicReticulum":
-          $(".popup").append("<p><strong>Endoplasmic Reticulum</strong>:</br>It is mainly responsible for the transportation of proteins and other carbohydrates to another organelle, which includes lysosomes, Golgi apparatus, plasma membrane, etc. They provide the increased surface area for cellular reactions.</p><img class='image' src='images/cellParts/endoplasmicReticulum.PNG' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Endoplasmic_reticulum'>Endoplasmic Reticulum</a></strong>:</br>It is mainly responsible for the transportation of proteins and other carbohydrates to another organelle, which includes lysosomes, Golgi apparatus, plasma membrane, etc. They provide the increased surface area for cellular reactions.</p><img class='image' src='images/cellParts/endoplasmicReticulum.PNG' alt='cell part' height='70' width='70'/>");
           break;
 
         case "golgiApparatus":
-          $(".popup").append("<p><strong>Golgi Apparatus</strong>:</br>It has been likened to the cell's post office. A major function is the modifying, sorting and packaging of proteins for secretion. It is also involved in the transport of lipids around the cell, and the creation of lysosomes.</p><img class='image' src='images/cellParts/golgiApparatus.jpeg' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Golgi_apparatus'>Golgi Apparatus</a></strong>:</br>It has been likened to the cell's post office. A major function is the modifying, sorting and packaging of proteins for secretion. It is also involved in the transport of lipids around the cell, and the creation of lysosomes.</p><img class='image' src='images/cellParts/golgiApparatus.jpeg' alt='cell part' height='70' width='70'/>");
           break;
 
         case "microtubes":
-          $(".popup").append("<p><strong>Microtubules</strong>:</br>Microtubules are conveyer belts inside the cells. They move vesicles, granules, organelles like mitochondria, and chromosomes via special attachment proteins.</p><img class='image' src='images/cellParts/microtubes.png' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Microtubule'>Microtubules</a></strong>:</br>Microtubules are conveyer belts inside the cells. They move vesicles, granules, organelles like mitochondria, and chromosomes via special attachment proteins.</p><img class='image' src='images/cellParts/microtubes.png' alt='cell part' height='70' width='70'/>");
           break;
 
         case "03_low_1":
-          $(".popup").append("<p><strong>Centrosomes</strong>:</br>The main purpose of a centrosome is to organize microtubules and provide structure for the cell, as well as work to pull chromatids apart during cell division.</p><img class='image' src='images/cellParts/centrosome.PNG' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Centrosome'>Centrosomes</a></strong>:</br>The main purpose of a centrosome is to organize microtubules and provide structure for the cell, as well as work to pull chromatids apart during cell division.</p><img class='image' src='images/cellParts/centrosome.PNG' alt='cell part' height='70' width='70'/>");
           break;
 
         case "pores":
-          $(".popup").append("<p><strong>Nuclear Pores</strong>:</br>Nuclear pores are protein-based channels in the nuclear envelope. They regulate the movement of molecules from the nucleus to the cytoplasm, and vice versa.</p><img class='image' src='images/cellParts/pores.PNG' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Nuclear_pore'>Nuclear Pores</a></strong>:</br>Nuclear pores are protein-based channels in the nuclear envelope. They regulate the movement of molecules from the nucleus to the cytoplasm, and vice versa.</p><img class='image' src='images/cellParts/pores.PNG' alt='cell part' height='70' width='70'/>");
           break;
 
         case "vesicles":
-          $(".popup").append("<p><strong>Vesicles</strong>:</br>Vesicles are cellular organelles that are composed of a lipid bilayer. You can think of vesicles as cellular envelopes that are used to transport materials from one place to another. Vesicles also function in metabolism and enzyme storage as well.</p><img class='image' src='images/cellParts/vesicles.PNG' alt='cell part' height='70' width='70'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Vesicle_(biology_and_chemistry)'>Vesicles</a></strong>:</br>Vesicles are cellular organelles that are composed of a lipid bilayer. You can think of vesicles as cellular envelopes that are used to transport materials from one place to another. Vesicles also function in metabolism and enzyme storage as well.</p><img class='image' src='images/cellParts/vesicles.PNG' alt='cell part' height='70' width='70'/>");
           break;
 
         case "filler":
-          $(".popup").append("<p><strong>Nuclear Envelope</strong>:</br> The nuclear envelope, also known as the nuclear membrane, is made up of two lipid bilayer membranes which in eukaryotic cells surrounds the nucleus, which encases the genetic material.</p><img class='image' src='images/cellParts/envelope.PNG' alt='cell part' height='70' width='100'/>");
+          $(".popup").append("<p><strong><a href='https://en.wikipedia.org/wiki/Nuclear_envelope'>Nuclear Envelope</a></strong>:</br> The nuclear envelope, also known as the nuclear membrane, is made up of two lipid bilayer membranes which in eukaryotic cells surrounds the nucleus, which encases the genetic material.</p><img class='image' src='images/cellParts/envelope.PNG' alt='cell part' height='70' width='100'/>");
           break;
       }
 
