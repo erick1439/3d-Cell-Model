@@ -19,4 +19,7 @@
 -	The use of the ray-caster algorithm from three.js to selected specific objects on the cell.
 
 # How to run:
--	The program just needs be open with a local server.
+-	Clone the repo
+- cd into 3d-Cell-Model
+- npm install
+- npm start
