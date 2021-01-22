@@ -114,6 +114,13 @@ function loadObject(){
 
             var percentComplete = xhr.loaded / xhr.total * 100;
             console.log( 'cell ' + Math.round( percentComplete, 2 ) + '% downloaded' );
+
+            if (Math.round( percentComplete, 2 ) == 100)
+            {
+                var test = document.getElementsByClassName("loader")[0];
+                test.style.visibility = "hidden";
+            }
+            
         }
         }, function (){});
     });
