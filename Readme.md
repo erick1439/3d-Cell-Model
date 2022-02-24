@@ -23,3 +23,6 @@
 - cd into 3d-Cell-Model
 - npm install
 - npm start
+
+# Live Demo:
+- https://cell-model-3d.herokuapp.com/
