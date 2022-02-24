@@ -1,5 +1,5 @@
 # Description: 
-- Develop in JavaScript with the use of Three.js, HTML, CSS, and Vectary. This is an interactive 3d project that allows users to learn the anatomy of an animal cell.
+- This is an interactive 3d project that allows users to navigate, explore, and learn the anatomy of an animal cell. The user is able to pinpoint a particular area of the cell and learn how an individual component works. This project was developed in JavaScript with the help of Three.js, HTML, CSS, and Vectary.
 
 # Goal:
 -	Create a 3d interactive human cell that displays its anatomy.
