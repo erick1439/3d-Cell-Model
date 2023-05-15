@@ -174,7 +174,6 @@ const App = () => {
         obj.name = "cellObject";
 
         // Adding the scaling property to the GUI.
-        guiController.addFolder("");
 
         let objectScaling = guiController.addFolder("Scaling");
         objectScaling.add(obj.scale, "y", 1 / 10, 2).name("Scale")
