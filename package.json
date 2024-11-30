@@ -19,6 +19,6 @@
   "homepage": "https://github.com/erick1439/3d-Cell-Model#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "three": "^0.120.1"
+    "three": "^0.137.0"
   }
 }
